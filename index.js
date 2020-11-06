@@ -163,7 +163,7 @@ Use the getReviewsByRating function below to do the following:
  function getReviewByRating(reviews, stars) {
     let newArray = [];
     for (i in reviews){
-      if (reviews[i].includes(stars)){
+      if (reviews[i].rating >= stars){
         newArray.push(reviews[i]);
       }
     }
